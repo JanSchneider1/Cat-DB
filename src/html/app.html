@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CatDB</title>
+    <link rel="stylesheet" type="text/css" href="/app.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
+</head>
+<body>
+    <script src="/app.js"></script>
+    <blockquote>
+        This is a demo for building an web application with docker-compose,
+        it consists of a simple Node/Express Backend with a plain HTML-Frontend styled
+        with water.css. There are two other containers containing the Mongo-DB and
+        Admin-Interface (access on <a href="http://localhost:8081">localhost:8081</a>).
+        Below you can store and see your cats in the data base.
+    </blockquote>
+    <details>
+        <summary>Add a cat to Mongo-DB</summary>
+        <br/>
+        <form action="/" method="post">
+            <fieldset>
+                <legend>Your Cat</legend>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Fluffy"/>
+                <label for="fur-color">Name</label>
+                <input type="text" name="furColor" id="fur-color" placeholder="White"/>
+                <label for="fav-food">Name</label>
+                <input type="text" name="favFood" id="fav-food" placeholder="Cat-Food"/>
+                <input type="submit"/>
+            </fieldset>
+        </form>
+    </details>
+    <br/>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Fur Color</th>
+                <th>Favourite Food</th>
+            </tr>
+        </thead>
+        <tbody id="table-data">
+            <!-- Data added here -->
+        </tbody>
+    </table>
+</body>
+</html>
