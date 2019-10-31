@@ -25,7 +25,8 @@ The project contains three containers structured by docker-compose:
 The Cat-App and Mongo Express accesses the Mongo DB over its exposed address `mongodb://mongo-db:27017`.
 While Mongo DB persists the data in a volume.
 
+![Screenshot 2](./screenshot_02.png)
+
 # Screenshots
 
 ![Screenshot 1](./screenshot_01.png)
- 
